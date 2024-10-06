@@ -1,0 +1,80 @@
+:root {
+    --primary-color: rgb(92, 160, 209);
+    --secondary-color: #e8ddb5;
+    --accent-color-light: #0c8162;
+    --accent-color-dark: #106950;
+    --heading-font: "Merriweather";
+    --paragraph-font: "Poppins";
+    /* color pallete link https://coolors.co/e8ddb5-5ca0d1-0c8162-106950 */
+}
+body {
+    max-width: 80%;
+    position: relative;
+    left: 10%;
+}
+main {
+    text-align: center;
+}
+h1 {
+    font-family: "Merriweather";
+    font-weight: 600;
+    font-size: 100px;
+    color: #fff;
+    text-align: center;
+    background-color: #106950ce;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    width: 100%;
+}
+.client {
+    max-width: 37.5%;
+    float: right;
+    padding: 1%;
+}
+.blurb {
+    color:#000;
+    position: relative;
+    top: 21%;
+}
+article {
+    position: absolute;
+    background:var(--primary-color);
+    border: 1px solid #000;
+    box-shadow: 0 0 10px #000;
+    opacity: 0.9;
+    top: 50%;
+    max-width: 50%;
+    padding: 1%;
+    font-size: x-large;
+    right: 25%;
+    bottom: 3%;
+}
+h2 {
+    color: var(--primary-color);
+
+}
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #106950;
+}
+.hero {
+    margin: 10px auto;
+    position: relative;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: static;
+    object-fit: cover;
+}
+.reviews img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+a:link {
+    text-decoration: none;
+}
