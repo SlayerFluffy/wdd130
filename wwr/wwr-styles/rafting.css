@@ -47,7 +47,7 @@ main {
 }
 .hero {
     display: grid;
-    grid-template-rows: 50% 45% 5%;
+    grid-template-rows: 50%, 45%, 5%;
     grid-template-columns: 100%;
     grid-gap: 40px;
     margin: 10px auto;
@@ -117,17 +117,14 @@ p {
 }
 footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid black;
+    justify-content: space-evenly;
 }
 .copywrite {
-    align-self: center;
-    border: 1px solid black;
+    display: flex;
 }
 .socials {
-    align-self: flex-end;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
 }
 a:link {
     text-decoration: none;
