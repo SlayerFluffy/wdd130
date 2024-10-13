@@ -14,8 +14,10 @@
 </head>
 <body>
     <header>
-        <img src="wwr-images/logo.jpg" alt="Logo">
-        <nav>
+        <div class="logo-flex-box">
+            <img class="logo" src="wwr-images/logo.jpg" alt="Logo">
+        </div>
+        <nav class="nav-links">
             <a href="index.html">index</a>
             <a href="about.html">about</a>
             <a href="trips.html">trips</a>
@@ -26,27 +28,52 @@
         <div class="hero">
             <img src="wwr-images/hero-image.jpg" alt="river">
             <h1>White Water Rafting</h1>
-            <article>
-                <img class= "client" src="wwr-images/happy-client.jpg" alt="Happy Client">
-                <p class="blurb">We here at White Water Rafting take fun seriously. Our mission is to take you and your loved ones on an adventure. Our experienced river guides do all the hard stuff, so you can just sit back and enjoy the ride. Like we always say, you haven't lived until you've nearly died.</p>
-            </article>
+            <div class = "centering">
+                <article class="blurb-box">
+                    <div class="blurb-grid">
+                        <div class = "blurb-flex">
+                            <p class="blurb">We here at White Water Rafting take fun seriously. Our mission is to take you and your loved ones on an adventure. Our experienced river guides do all the hard stuff, so you can just sit back and enjoy the ride. Like we always say, you haven't lived until you've nearly died.</p>
+                        </div> 
+                        <div class = "client-flex">    
+                            <img class= "client" src="wwr-images/happy-client.jpg" alt="Happy Client">
+                        </div>   
+                    </div>
+                </article>
+            </div>
         </div>
         <section>
             <h2>History</h2>
             <p>White Water Rafting was founded by Joe Founderman in 2024 as part of a school assignment. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum architecto tempora nihil odio beatae esse rerum. Dicta, atque dolorum tempora, voluptates eius voluptate esse dolore sint iure maiores vero ea.</p>
         </section>
-        <section class="reviews">
+        <section>
             <h2>Adventure Awaits You!</h2>
-            <img src="wwr-images/rafting-1.jpg" alt="a group rafting">
-            <img src="wwr-images/rafting-2.jpg" alt="a person canoeing">
-            <img src="wwr-images/rafting-3.jpg" alt="a group celebrating on a raft">
-            <img src="wwr-images/rafting-4.jpg" alt="a group rafting through rough water">
-            <img src="wwr-images/rafting-5.jpg" alt="another group in rough water">
+            <div class="reviews">
+                <figure>
+                    <img src="wwr-images/rafting-1.jpg" alt="a group rafting">
+                    <figcaption>Colorado River</figcaption>
+                </figure>
+                <figure>
+                    <img src="wwr-images/rafting-2.jpg" alt="a person canoeing">
+                    <figcaption>Salmon River</figcaption>
+                </figure>
+                <figure>
+                    <img src="wwr-images/rafting-3.jpg" alt="a group celebrating on a raft">
+                    <figcaption>Gauley River</figcaption>
+                </figure>
+                <figure>
+                    <img src="wwr-images/rafting-4.jpg" alt="a group rafting through rough water">
+                    <figcaption>Arkansas River</figcaption>
+                </figure>
+                <figure>
+                    <img src="wwr-images/rafting-5.jpg" alt="another group in rough water">
+                    <figcaption>Tuolumme River</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024, White Water Rafting, Drew Jezek</p>
-        <nav class="sociallinks">
+        <p class = "copywrite">&copy; 2024, White Water Rafting, Drew Jezek</p>
+        <nav class="socials">
             <a href="https://facebook.com">
                 <img src="wwr-images/fb-icon.png" alt="facebook icon" width="30">
             </a>

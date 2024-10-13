@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgb(92, 160, 209);
+    --primary-color: rgb(114, 165, 201);
     --secondary-color: #e8ddb5;
     --accent-color-light: #0c8162;
     --accent-color-dark: #106950;
@@ -7,73 +7,127 @@
     --paragraph-font: "Poppins";
     /* color pallete link https://coolors.co/e8ddb5-5ca0d1-0c8162-106950 */
 }
+
 body {
     max-width: 80%;
     position: relative;
     left: 10%;
 }
+header {
+    display:grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 50px 50px 50px;
+    grid-gap: 10px;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+.logo-flex-box {
+    grid-area: 1/1/4/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    border: 1px solid black;
+}
+.nav-links {
+    display: flex;
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-items: center;
+}
+.nav-links a {
+    flex: 1 1 100%;
+}
 main {
     text-align: center;
 }
+.hero {
+    display: grid;
+    grid-template-rows: 50% 45% 5%;
+    grid-template-columns: 100%;
+    grid-gap: 40px;
+    margin: 10px auto;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    grid-area: 1/1/4/2;
+}
 h1 {
+    grid-area: 1/1/2/2;
     font-family: "Merriweather";
-    font-weight: 600;
-    font-size: 100px;
     color: #fff;
     text-align: center;
     background-color: #106950ce;
-    position: absolute;
-    top: 50px;
     z-index: 1;
     width: 100%;
 }
-.client {
-    max-width: 37.5%;
-    float: right;
-    padding: 1%;
+.centering {
+    grid-area: 2/1/3/2;
+    display: flex;
+    justify-content: center;
 }
-.blurb {
-    color:#000;
-    position: relative;
-    top: 21%;
-}
-article {
-    position: absolute;
+.blurb-box {
+    grid-template-columns: 3fr 1fr;
     background:var(--primary-color);
     border: 1px solid #000;
     box-shadow: 0 0 10px #000;
-    opacity: 0.9;
-    top: 50%;
-    max-width: 50%;
+    opacity: 0.85;
     padding: 1%;
-    font-size: x-large;
-    right: 25%;
-    bottom: 3%;
+    width: 90%;
+}
+.blurb-grid {
+    display: grid;
+    grid-template: 5% 90% 5% / 3fr 1fr;
+}
+.blurb-flex {
+    display: flex;
+    justify-content: center;
+}
+.blurb {
+    justify-content: center;
+    align-items: center;
+    grid-row: 2/3;
+    color:#000;
+}
+.client {
+    height: 90%;
+    width: auto;
 }
 h2 {
     color: var(--primary-color);
-
 }
 p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: #106950;
 }
-.hero {
-    margin: 10px auto;
-    position: relative;
-}
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    position: static;
-    object-fit: cover;
+.reviews {
+    display:flex;
+    justify-content: space-around;
+    flex: 1;
 }
 .reviews img {
-    display: block;
-    width: 50%;
+    width: 100%;
     height: auto;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+}
+.copywrite {
+    align-self: center;
+    border: 1px solid black;
+}
+.socials {
+    align-self: flex-end;
+    border: 1px solid black;
 }
 a:link {
     text-decoration: none;
