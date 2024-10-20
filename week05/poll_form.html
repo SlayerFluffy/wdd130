@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="poll-form style" href="styles/poll-form.css">
+    <title>Poll Form</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Drew Jezek | HTML Form - User Poll</h1>
+    </header>
+    <Main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                    <label for="fullname">Full name:</label>
+                    <input type="text" id="fullname" name="fullname"><br>
+                    <label for="useremail">Email address:</label>
+                    <input type="email" id="useremail" name="useremail"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser">What is your favorite browser?</label>
+                <select name="browser" id="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="opera">Opera</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet"><br>
+                <label for="placeslived">List the places you have lived:</label><br>
+                <textarea name="placeslived" id="placeslived" rows="4" placeholder="Snowflake, AZ."></textarea><br>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </Main>
+    <Footer>
+        <p>©️2024 | Poll Form | Drew Jezek</p>
+    </Footer>
+</body>
+</html>
