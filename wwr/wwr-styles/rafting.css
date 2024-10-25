@@ -47,8 +47,8 @@ main {
 }
 .hero {
     display: grid;
-    grid-template-rows: 50%, 45%, 5%;
     grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 40px;
     margin: 10px auto;
 }
@@ -56,6 +56,21 @@ main {
     width: 100%;
     height: auto;
     grid-area: 1/1/4/2;
+}
+.trip-link-flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3/1/4/2;
+}
+.trip-link {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    border: 1px solid black;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px black;
+    color: var(--accent-color-dark);
 }
 h1 {
     grid-area: 1/1/2/2;
@@ -65,11 +80,6 @@ h1 {
     background-color: #106950ce;
     z-index: 1;
     width: 100%;
-}
-.centering {
-    grid-area: 2/1/3/2;
-    display: flex;
-    justify-content: center;
 }
 .blurb-box {
     grid-template-columns: 3fr 1fr;
@@ -98,6 +108,19 @@ h1 {
     height: 90%;
     width: auto;
 }
+.sub-form {
+    display: block;
+    text-align: center;
+}
+.subscription {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 25%;
+    padding: 10px;
+    flex-wrap: wrap;
+}
 h2 {
     color: var(--primary-color);
 }
@@ -113,6 +136,15 @@ p {
 }
 .reviews img {
     width: 100%;
+    height: auto;
+}
+.samples {
+    display:flex;
+    justify-content: space-around;
+    flex: 1;
+}
+.samples img {
+    width: 150px;
     height: auto;
 }
 footer {
