@@ -144,8 +144,16 @@ p {
     flex: 1;
 }
 .samples img {
-    width: 150px;
+    width: 250px;
     height: auto;
+}
+.trip-table {
+    border: 1px solid;
+    width: 100%;
+}
+th, td {
+    border: 1px solid;
+    background-color: var(--primary-color);
 }
 footer {
     display: flex;
