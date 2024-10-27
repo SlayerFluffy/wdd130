@@ -147,6 +147,12 @@ p {
     width: 250px;
     height: auto;
 }
+.samples p {
+    display:flex;
+    justify-content: space-around;
+    flex: 1;
+    border: 1px solid;
+}
 .trip-table {
     border: 1px solid;
     width: 100%;
